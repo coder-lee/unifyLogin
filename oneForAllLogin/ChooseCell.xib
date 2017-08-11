@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="ChooseCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成都信息工程学院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upu-34-6ST">
+                        <rect key="frame" x="20" y="8" width="122.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成都市航空港55号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bU-MZ-ahU">
+                        <rect key="frame" x="20" y="34" width="125.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_green" translatesAutoresizingMaskIntoConstraints="NO" id="eov-Kq-ez5">
+                        <rect key="frame" x="8" y="15" width="3" height="3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="Zfd-be-fag"/>
+                            <constraint firstAttribute="width" constant="3" id="wC0-ky-OiO"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="7Jp-uy-E0B">
+                        <rect key="frame" x="8" y="42" width="3" height="3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="otM-AB-zoK"/>
+                            <constraint firstAttribute="width" constant="3" id="vpl-UX-HS3"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7Jp-uy-E0B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="0r0-e2-hwh"/>
+                    <constraint firstItem="eov-Kq-ez5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="CcC-YJ-S58"/>
+                    <constraint firstItem="eov-Kq-ez5" firstAttribute="centerY" secondItem="upu-34-6ST" secondAttribute="centerY" id="RgY-at-glH"/>
+                    <constraint firstItem="7Jp-uy-E0B" firstAttribute="centerY" secondItem="8bU-MZ-ahU" secondAttribute="centerY" id="U4O-Bg-VzI"/>
+                    <constraint firstItem="8bU-MZ-ahU" firstAttribute="top" secondItem="upu-34-6ST" secondAttribute="bottom" constant="8" id="aka-hq-f2a"/>
+                    <constraint firstItem="upu-34-6ST" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="bIe-MX-5DK"/>
+                    <constraint firstItem="upu-34-6ST" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="nqh-Ed-3kG"/>
+                    <constraint firstItem="8bU-MZ-ahU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="yli-jO-DDm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="locationLabel" destination="8bU-MZ-ahU" id="jqK-ky-wei"/>
+                <outlet property="nameLabel" destination="upu-34-6ST" id="VVo-Kh-KCL"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="135"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_green" width="6" height="6"/>
+        <image name="icon_yellow" width="6" height="6"/>
+    </resources>
+</document>

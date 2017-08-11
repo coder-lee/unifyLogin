@@ -1,0 +1,63 @@
+//
+//  OneForAll.pch
+//  oneForAllLogin
+//
+//  Created by leo on 2017/6/9.
+//  Copyright © 2017年 智行. All rights reserved.
+//
+
+#ifndef OneForAll_pch
+#define OneForAll_pch
+// 色值
+#undef	RGB
+#define RGB(R,G,B)          [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:1.0f]
+
+#undef	RGBA
+#define RGBA(R,G,B,A)       [UIColor colorWithRed:R/255.0f green:G/255.0f blue:B/255.0f alpha:A]
+
+
+#define MainColor RGB(19,222,105)
+//系统值
+#define SYSTEMVERSION  [[[UIDevice currentDevice] systemVersion] floatValue]
+#define SCREEN_WIDTH        [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGTH       [UIScreen mainScreen].bounds.size.height
+
+#define IOS7_OR_LATER	(NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1)
+#define IOS8_OR_LATER	(NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1)
+
+
+#define KLoading @"Loading..."
+// 这个是用来保存点击的ip的
+#define KIpString @"KipString"
+
+#define KFirstLogin @"KFirstLogin"
+#define KSecondLogin @"KSecondLogin"
+#define KUserModel @"KUserModel"
+#define KHistory @"KHistory"
+#define KHistoryArray @"KHistoryArray"
+
+#import "HttpUrls.h"
+#import "HttpManager.h"
+#import "UserModel.h"
+#import "BaseViewController.h"
+#import "YYKit.h"
+#import "HistoryModel.h"
+
+//Extension
+#import "NSString+XTExtension.h"
+#import "UIViewController+Nav.h"
+#import "NSData+AES256.h"
+#import "UIView+Extension.h"
+
+
+#import "BUIView.h"
+
+
+
+
+//ThirdParty
+#import "AFNetworking.h"
+#import "SVProgressHUD.h"
+#import "IQKeyboardManager.h"
+
+#endif /* OneForAll_pch */
